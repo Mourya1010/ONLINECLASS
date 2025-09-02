@@ -1,0 +1,36 @@
+@'
+# Node modules
+node_modules/
+mastersgang/node_modules/
+mastersgangbackend/node_modules/
+
+# Environment files (do not commit secrets)
+.env
+.env.*
+mastersgang/.env
+mastersgang/.env.*
+mastersgangbackend/.env
+mastersgangbackend/.env.*
+
+# Keep example env files
+!.env.example
+!mastersgang/.env.example
+!mastersgangbackend/.env.example
+
+# Build outputs
+dist/
+build/
+mastersgang/dist/
+mastersgang/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding UTF8 .gitignore
