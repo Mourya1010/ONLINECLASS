@@ -10,7 +10,7 @@ dotenv.config();
 const port  = process.env.PORT
 require('./db')
 
-const allowedOrigins = [process.env.FRONTEND_URL];
+const allowedOrigins = [process.env.FRONTEND_URL,'https://frontend-for-online-class.vercel.app'];
 
 app.use(cors({
     origin:function(origin,callback){
